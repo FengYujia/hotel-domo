@@ -53,7 +53,9 @@ use admin
 db.createUser({user:"root",pwd:"123321",roles:[{role:'root',db:'admin'}]})
 db.auth('root', '123321') 
 use hotel
-db.createUser({user:"admin",pwd:"123321",roles:[{role:'readWrite',db:'hotel'}]})
+if(!db.getUser('admin')) {
+    db.createUser({user:"admin",pwd:"123321",roles:[{role:'readWrite',db:'hotel'}]})
+}
 db.auth('admin', '123321')
 if(!db.managers.findOne({managerName:'root'})) {
     db.managers.insertOne({

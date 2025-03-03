@@ -11,9 +11,9 @@ services:
       options:
         max-size: "10M"
         max-file: "10"
-    # volumes:
-      # - ${VOLUME_PATH}/mongo/data:/data/db
-      # - ${VOLUME_PATH}/backend/logs:/www/backend/logs
+    volumes:
+      - ${VOLUME_PATH}/mongo/data:/data/db
+      - ${VOLUME_PATH}/backend/logs:/www/backend/logs
     ports:
       - "${MY_MONGODB_PORT}:27017"
       - "${MY_SERVER_PORT}:4000"
