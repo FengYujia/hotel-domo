@@ -11,4 +11,4 @@ production.yaml
 package-lock.json
 example.txt
 accessKey
-.gz
+*.tar.gz
