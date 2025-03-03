@@ -1,0 +1,12 @@
+{
+    "mongodb": {
+        "url":"mongodb://admin:123321@mongodb:27017/hotel",
+        "opts":{
+            "useNewUrlParser": true,
+            "useUnifiedTopology": true,
+            "serverSelectionTimeoutMS": 1000, 
+            "connectTimeoutMS": 10000,
+            "socketTimeoutMS": 120000 
+        }
+    }
+}

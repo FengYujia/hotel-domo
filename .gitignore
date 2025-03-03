@@ -1,0 +1,14 @@
+.venv
+.vscode
+*.con
+*.log
+node_modules
+build
+dist
+__pycache__
+developer.yaml
+production.yaml
+package-lock.json
+example.txt
+accessKey
+.gz

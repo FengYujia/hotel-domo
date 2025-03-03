@@ -1,0 +1,9 @@
+{
+    "mongodb": {
+        "url": "mongodb://localhost:27020/hotel_test",
+        "opts": {
+            "useNewUrlParser": true,
+            "useUnifiedTopology": true
+        }
+    }
+} 

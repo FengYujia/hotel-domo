@@ -1,5 +1,11 @@
 # hotel Demo
 
+
+# docker打包
+```
+cd docker && sh build.sh
+```
+
 # docker启动脚本
 ```
 cd images && sh setup.sh
