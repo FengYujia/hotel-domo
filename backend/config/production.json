@@ -1,6 +1,6 @@
 {
     "mongodb": {
-        "url":"mongodb://admin:123321@mongodb:27017/hotel",
+        "url":"mongodb://admin:123321@127.0.0.1:27017/hotel",
         "opts":{
             "useNewUrlParser": true,
             "useUnifiedTopology": true,
