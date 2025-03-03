@@ -1,7 +1,7 @@
 # yaml 配置
 services:
   hotel_demo:
-    image: hotel_demo:${version}
+    image: iamuni/hotel_demo:${version}
     container_name: hotel_demo
     build:
       context: ..
