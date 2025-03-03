@@ -24,6 +24,10 @@ mkdir -p ../images
 services=$(docker compose config --services)
 
 # 保存镜像
+echo "保存 hotel_demo 镜像..."
+docker save hotel_demo:${VERSION} > ../images/hotel_demo-${VERSION}.tar || exit 1
+gzip -f ../images/hotel_demo-${VERSION}.tar
+
 # echo "保存 MongoDB 镜像..."
 # docker save mongodb:${VERSION} > ../images/mongodb-${VERSION}.tar || exit 1
 # gzip -f ../images/mongodb-${VERSION}.tar
